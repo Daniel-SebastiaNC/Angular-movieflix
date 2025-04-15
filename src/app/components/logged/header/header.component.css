@@ -1,0 +1,93 @@
+header {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-weight: 900; /* peso da fonte mais forte */
+    color: #E50914; /* vermelho Netflix */
+    font-size: 2.5rem; /* tamanho da fonte maior */
+    text-transform: uppercase; /* texto em maiúsculas */
+    letter-spacing: 1px; /* espaçamento entre letras mais próximo */
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    height: 100%;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* sombra sutil */
+}
+
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #E50914;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.search input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    width: 200px;
+}
+
+.search input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.search button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.user-profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    cursor: pointer;
+}
