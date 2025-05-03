@@ -1,19 +1,27 @@
 <div class="movie-card">
   <div class="movie-content">
-    <h2 class="movie-title">Coringa 2</h2>
-    <p class="movie-description">Continuação da história de Arthur Fleck, explorando sua transformação completa no vilão Coringa.</p>
-    <div class="movie-info">
-      <div class="info-item">
-        <i class="fas fa-clock"></i>
-        <span>1:30h</span>
+    <h2 class="movie-title">{{ title }}</h2>
+    <p class="movie-description">{{ description }}</p>
+    <div class="movie-info-row">
+      <div class="movie-info-col">
+        <div class="info-item">
+          <i class="fas fa-clock"></i>
+          <span>{{ releaseDate }}</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-tags"></i>
+          <span>{{ categories.join(', ') }}</span>
+        </div>
       </div>
-      <div class="info-item">
-        <i class="fas fa-exclamation-circle"></i>
-        <span>Somente +18</span>
-      </div>
-      <div class="info-item">
-        <i class="fas fa-thumbs-up"></i>
-        <span>67% Aprovação</span>
+      <div class="movie-info-col">
+        <div class="info-item">
+          <i class="fas fa-play-circle"></i>
+          <span>{{ streamings.join(', ') }}</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-thumbs-up"></i>
+          <span>{{ rating }}</span>
+        </div>
       </div>
     </div>
   </div>
