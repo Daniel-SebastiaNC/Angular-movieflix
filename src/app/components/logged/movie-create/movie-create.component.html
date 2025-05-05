@@ -1,1 +1,39 @@
-<p>movie-create works!</p>
+<form id="register-movie-container">
+    <h1>Cadastre seu Filme Aqui</h1>
+    <div class="form-row">
+    <input type="text" placeholder="Nome do filme">
+    <input type="text" placeholder="Descrição do filme">
+    </div>
+    <div class="form-row">
+    <div class="input-icon">
+        <input type="date" placeholder="Data de lançamento" id="date">
+    </div>
+    <div class="input-icon">
+        <input type="text" placeholder="Avaliação geral">
+        <span class="icon">
+        <svg width="22" height="22" fill="none" stroke="#e50914" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+    </span>
+    </div>
+    </div>
+    <div class="form-row">
+    <div class="input-icon">
+        <select name="Aonde está disponível?" id="">
+        <option value="">Aonde está disponível?</option>
+        <option value="">Netflix</option>
+        <option value="">Amazon Video</option>
+        <option value="">MAX</option>
+        <option value="">Disney +</option>
+        </select>
+    </div>
+    <div class="input-icon">
+        <select name="Aonde está disponível?" id="">
+            <option value="">Qual a categoria?</option>
+            <option value="">Ação</option>
+            <option value="">Comédia</option>
+            <option value="">Romance</option>
+        </select>
+    </div>
+    </div>
+    <button type="submit">Cadastrar filme</button>
+</form>
