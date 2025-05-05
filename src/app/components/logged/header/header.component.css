@@ -15,6 +15,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -90,4 +91,96 @@ h1 {
     height: 32px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.register-button {
+    background-color: #E50914;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #a0070e;
+}
+
+/* Media Queries para Responsividade */
+@media screen and (max-width: 1024px) {
+    .header-container {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding-left: 0;
+    }
+
+    .search input {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .main-nav ul {
+        gap: 1rem;
+    }
+
+    .user-area {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search input {
+        width: 120px;
+    }
+
+    .register-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .user-area {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .register-button {
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
 }
