@@ -1,9 +1,12 @@
 <app-header/>
 <div class="movies-container">
-    <app-card title="Conringa 2" description="Continuação da história de Arthur Fleck, explorando sua transformação completa no vilão Coringa. " releaseDate="24/09/2024" [rating]="4.5" [categories]="['Ação', 'Aventura', 'Ficção Científica']" [streamings]="['Netflix', 'Prime Video']"/>
-    <app-card title="Conringa 2" description="Continuação da história de Arthur Fleck, explorando sua transformação completa no vilão Coringa. " releaseDate="24/09/2024" [rating]="4.5" [categories]="['Ação', 'Aventura', 'Ficção Científica']" [streamings]="['Netflix', 'Prime Video']"/>
-    <app-card title="Conringa 2" description="Continuação da história de Arthur Fleck, explorando sua transformação completa no vilão Coringa. " releaseDate="24/09/2024" [rating]="4.5" [categories]="['Ação', 'Aventura', 'Ficção Científica']" [streamings]="['Netflix', 'Prime Video']"/>
-    <app-card title="Conringa 2" description="Continuação da história de Arthur Fleck, explorando sua transformação completa no vilão Coringa. " releaseDate="24/09/2024" [rating]="4.5" [categories]="['Ação', 'Aventura', 'Ficção Científica']" [streamings]="['Netflix', 'Prime Video']"/>
-
-    <app-card title="Conringa 2" description="Continuação da história de Arthur Fleck, explorando sua transformação completa no vilão Coringa. " releaseDate="24/09/2024" [rating]="4.5" [categories]="['Ação', 'Aventura', 'Ficção Científica']" [streamings]="['Netflix', 'Prime Video']"/>
+    <app-card 
+        *ngFor="let movie of movies"
+        [title]="movie.title"
+        [description]="movie.description"
+        [releaseDate]="movie.releaseDate"
+        [rating]="movie.rating"
+        [categories]="movie.categories"
+        [streamings]="movie.streamings"
+    />
 </div>
