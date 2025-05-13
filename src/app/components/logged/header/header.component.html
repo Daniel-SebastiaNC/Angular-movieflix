@@ -5,14 +5,14 @@
         </div>
         <nav class="main-nav">
             <ul>
-                <li><a href="/">Início</a></li>
-                <li><a href="/series">Séries</a></li>
-                <li><a href="/filmes">Filmes</a></li>
-                <li><a href="/originais">Originais</a></li>
-                <li><a href="/novidades">Novidades</a></li>
+                <li><a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a></li>
+                <li><a [routerLink]="['/series']" routerLinkActive="active">Séries</a></li>
+                <li><a [routerLink]="['/filmes']" routerLinkActive="active">Filmes</a></li>
+                <li><a [routerLink]="['/originais']" routerLinkActive="active">Originais</a></li>
+                <li><a [routerLink]="['/novidades']" routerLinkActive="active">Novidades</a></li>
             </ul>
         </nav>
-        <a href="/register-movie" class="register-button">Adicionar Filme</a>
+        <a [routerLink]="['/register-movie']" class="register-button">Adicionar Filme</a>
         <div class="user-area">
             <div class="search">
                 <input type="text" placeholder="🔎 Buscar..." >

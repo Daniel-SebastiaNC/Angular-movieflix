@@ -52,6 +52,11 @@ h1 {
     color: #E50914;
 }
 
+.main-nav a.active {
+    color: #E50914;
+    font-weight: bold;
+}
+
 .user-area {
     display: flex;
     align-items: center;
