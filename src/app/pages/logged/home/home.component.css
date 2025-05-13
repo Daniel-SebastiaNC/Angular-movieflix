@@ -5,6 +5,8 @@
   padding: 20px;
   max-width: 1400px;
   margin: 0 auto;
+  justify-items: center;
+  align-items: center;
 }
 
 @media (min-width: 1200px) {
@@ -13,19 +15,19 @@
   }
 }
 
-@media (max-width: 1199px) and (min-width: 768px) {
+@media (max-width: 1199px) and (min-width: 976px) {
   .movies-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 767px) and (min-width: 576px) {
+@media (max-width: 975px) and (min-width: 654px) {
   .movies-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 653px) {
   .movies-container {
     grid-template-columns: 1fr;
   }

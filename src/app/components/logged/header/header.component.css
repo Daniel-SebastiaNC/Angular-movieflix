@@ -113,7 +113,7 @@ h1 {
 }
 
 /* Media Queries para Responsividade */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1124px) {
     .header-container {
         padding: 0 1rem;
     }
@@ -123,8 +123,13 @@ h1 {
         padding-left: 0;
     }
 
+    .user-area {
+        width: 100%;
+        justify-content: center;
+    }
+
     .search input {
-        width: 150px;
+        width: 420px;
     }
 }
 
@@ -151,12 +156,15 @@ h1 {
     }
 
     .search input {
-        width: 120px;
+        width: 60%;
+        min-width: 240px;
     }
-
+    
     .register-button {
         padding: 0.4rem 0.8rem;
-        font-size: 0.9rem;
+        width: 80%;
+        max-width: 320px;
+        text-align: center;
     }
 }
 
@@ -168,10 +176,6 @@ h1 {
     .main-nav ul {
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .search {
-        width: 100%;
     }
 
     .search input {
