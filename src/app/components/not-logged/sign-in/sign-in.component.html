@@ -1,13 +1,56 @@
-<form id="sign-in-conteiner">
-    <h1>Entre na sua conta</h1>
+<form id="sign-in-conteiner" (ngSubmit)="onSubmit()" #loginForm="ngForm" >
+    <h1>Login</h1>
 
-    <input type="text" placeholder="E-mail ou número de telefone">
-    <input type="password" placeholder="Sua senha">
 
-    <button>Entrar na conta</button>
+    <input
+        placeholder="Digite seu email"
+        type="email"
+        id="email"
+        name="email"
+        [(ngModel)]="user.email"
+        required
+        email
+        #email="ngModel"
+        [disabled]="isLoading"
+    >
+
+    <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error-message">
+
+        <div *ngIf="email.errors?.['required']">Email é obrigatório</div>
+        <div *ngIf="email.errors?.['email']">Email inválido</div>
+
+    </div>
+
+
+    <input
+        placeholder="Digite sua senha"
+        type="password"
+        id="password"
+        name="password"
+        [(ngModel)]="user.password"
+        required
+        #password="ngModel"
+        [disabled]="isLoading">
+
+    <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error-message">
+
+        <div *ngIf="password.errors?.['required']">Senha é obrigatória</div>
+
+    </div>
+
+    <div *ngIf="errorMessage" class="error-message">
+
+        {{errorMessage}}
+
+    </div>
 
     <a [routerLink]="['/register']" class="forgot-password">Esqueci minha senha</a>
+
     <span class="signup-now">
         Novo por aqui? <a [routerLink]="['/register']">Assine agora</a>
     </span>
+
+    <button type="submit" [disabled]="!loginForm.form.valid || isLoading">
+        {{ isLoading ? 'Entrando...' : 'Entrar' }}
+    </button>
 </form>

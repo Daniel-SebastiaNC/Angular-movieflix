@@ -98,6 +98,28 @@ h1 {
     cursor: pointer;
 }
 
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logout-button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 .register-button {
     background-color: #E50914;
     color: white;
@@ -159,7 +181,7 @@ h1 {
         width: 60%;
         min-width: 240px;
     }
-    
+
     .register-button {
         padding: 0.4rem 0.8rem;
         width: 80%;

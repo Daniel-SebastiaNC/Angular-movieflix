@@ -12,5 +12,5 @@ import { SignInComponent } from '../../../components/not-logged/sign-in/sign-in.
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  
+
 }
